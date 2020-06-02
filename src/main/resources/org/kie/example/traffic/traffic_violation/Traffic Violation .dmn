@@ -2,7 +2,30 @@
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_402C563D-7948-4849-93A8-D736959AC401" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_F3919A81-07BE-4803-A3B0-B537170D9055" name="Traffic Violation " expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_402C563D-7948-4849-93A8-D736959AC401">
   <dmn:extensionElements/>
   <dmn:itemDefinition id="_4E793599-7903-4086-ACF8-2943A1447E91" name="tDriver" isCollection="false">
-    <dmn:itemComponent id="_9E1D8830-8DC0-4E4B-8857-DFC2B85C5115" name="Name" isCollection="false">
+    <dmn:itemComponent id="_E0C55BC5-155B-477F-80E1-72CE2BC8DB1F" name="Points" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_78DBF39B-2363-4CD3-8AF2-6A3FC25660E4" name="City" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_D743CDC5-FACD-4877-B4C3-A35A68BEDA73" name="State" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_849A73B2-3472-4122-9A6E-3B0F84E510EF" name="Age" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_544B4339-C826-4EB7-85F0-7063DEB80573" name="Name" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
+  <dmn:itemDefinition id="_FEDD3B2F-91B6-4213-ACDA-0631468B7037" name="tViolation" isCollection="false">
+    <dmn:itemComponent id="_A566FD77-FBC8-4850-91C0-85F55DE0A3CB" name="Type" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_373FD1C1-15CA-4167-8D25-A3AAD35E1144" name="Date" isCollection="false">
+      <dmn:typeRef>date</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_418C8580-634C-41C1-989D-EC0E076F537E" name="Code" isCollection="false">
       <dmn:typeRef>string</dmn:typeRef>
     </dmn:itemComponent>
   </dmn:itemDefinition>
