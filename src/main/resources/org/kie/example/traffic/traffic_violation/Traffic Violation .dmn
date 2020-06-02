@@ -69,6 +69,48 @@
     <dmn:informationRequirement id="_ADE28B4F-9427-4F56-931D-9FBD7CD61A20">
       <dmn:requiredInput href="#_2C299F66-8AFF-4FDD-AFD1-9BBF243E8B53"/>
     </dmn:informationRequirement>
+    <dmn:decisionTable id="_C044E624-1765-4514-894A-809B19D424E6" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_2FBBEDD8-6455-4ACA-B2C6-52D801A6C5D1">
+        <dmn:inputExpression id="_31BA681E-C159-4DD4-BBE3-28D38FDA0204" typeRef="string">
+          <dmn:text>Violation.Type</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_57C7DABF-E427-45BF-A6F4-AF390CA71100">
+        <dmn:inputExpression id="_B72AE13E-3970-4855-ABE9-53697DCA3223" typeRef="number">
+          <dmn:text>Violation.Actual Speed - Violation.Speed Limiten</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_03F7A099-FF35-419D-B6F7-249362C8FB28" name="Amount" typeRef="number"/>
+      <dmn:output id="_B6D09377-78FC-4000-8727-E5F17EB38BC7" name="Points" typeRef="number"/>
+      <dmn:rule id="_368718D4-399C-4A43-8280-FE99B0B71979">
+        <dmn:inputEntry id="_5C8DA271-5F5D-4ECD-90B9-25DC33E00266">
+          <dmn:text>"speed"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_675C5EC1-8910-40A6-8F06-1F58C6275136">
+          <dmn:text>[10..30)</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_0F8FA019-8498-457A-81E2-762104048818">
+          <dmn:text>500</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_9657B7B7-9227-467B-AC21-34DA27ACB361">
+          <dmn:text>3</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_EAF4D2F4-1B44-4A43-BEBF-DB949D5238DA">
+        <dmn:inputEntry id="_BB27D2D1-4303-4FCB-B03A-FC65E68F16EA">
+          <dmn:text>"speed"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_58EC2C56-F946-4EFA-93BD-2631B0088DBF">
+          <dmn:text>&gt;= 30</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_2B98997C-ECCB-40D8-A27B-3B1BEB566273">
+          <dmn:text>1000</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_8F9BC7AF-7979-4EC9-9408-0DA68E17D599">
+          <dmn:text>7</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
   </dmn:decision>
   <dmn:inputData id="_73B2678A-ED35-4DC0-8E58-DF77399424A5" name="Driver">
     <dmn:extensionElements/>
@@ -77,7 +119,16 @@
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
-        <kie:ComponentsWidthsExtension/>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_C044E624-1765-4514-894A-809B19D424E6">
+            <kie:width>50.0</kie:width>
+            <kie:width>129.0</kie:width>
+            <kie:width>326.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-_2C299F66-8AFF-4FDD-AFD1-9BBF243E8B53" dmnElementRef="_2C299F66-8AFF-4FDD-AFD1-9BBF243E8B53" isCollapsed="false">
         <dmndi:DMNStyle>
