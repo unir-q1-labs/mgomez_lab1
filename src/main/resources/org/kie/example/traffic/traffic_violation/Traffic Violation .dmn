@@ -110,6 +110,34 @@
           <dmn:text>7</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
+      <dmn:rule id="_F5C5EC82-5D4D-418B-9F8B-6248B56C05F8">
+        <dmn:inputEntry id="_0502B886-FAF6-4DF6-BBD2-376A4FDD0DA5">
+          <dmn:text>"parking"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_C232D6BC-D2DF-4607-88B1-047C55E1CEEC">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_B5ACCF4F-0D56-4758-9908-268A89C64B5F">
+          <dmn:text>100</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_979EF746-0D14-45E0-A31F-D2AFCDCB59BA">
+          <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_A77F39D9-7FEC-43B2-A694-70210D55C4DD">
+        <dmn:inputEntry id="_C50A8188-AE39-457E-9A6C-165043E12F53">
+          <dmn:text>"driving under the influence"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_F68C90D4-20AD-4EC8-903D-93B3A56A278F">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_5D916A92-ED8C-48FF-9A51-26EB28AF2BFC">
+          <dmn:text>1000</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_97328B43-97E4-47E0-AFEC-8C83D270EEE8">
+          <dmn:text>5</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
   <dmn:inputData id="_73B2678A-ED35-4DC0-8E58-DF77399424A5" name="Driver">
@@ -122,8 +150,8 @@
         <kie:ComponentsWidthsExtension>
           <kie:ComponentWidths dmnElementRef="_C044E624-1765-4514-894A-809B19D424E6">
             <kie:width>50.0</kie:width>
-            <kie:width>129.0</kie:width>
-            <kie:width>326.0</kie:width>
+            <kie:width>241.0</kie:width>
+            <kie:width>315.0</kie:width>
             <kie:width>100.0</kie:width>
             <kie:width>100.0</kie:width>
             <kie:width>100.0</kie:width>
